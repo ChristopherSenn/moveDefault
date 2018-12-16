@@ -1,0 +1,103 @@
+@import '../../../../assets/GlobalScss/var.scss';
+
+.margin {
+    flex-wrap: wrap;
+}
+
+.course-title {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.course-description-text {
+    margin-right: 2%;
+    text-align: justify;
+}
+
+.course-infos {
+    margin-left: 2%;
+    flex-wrap: wrap;
+}
+
+.course-rating {
+    align-items: flex-end;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+.course-rating>div {
+    height: 100%;
+}
+
+tr td:first-child {
+    text-align: right;
+    padding-right: 10px;
+    color: $move-blue;
+}
+
+.course-movers {
+    width: 30%;
+    height: auto;
+}
+
+.course-movers-now{
+    align-self: flex-end;
+    margin-right: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: right;
+}
+
+.course-movers-yet{
+    align-self: flex-start;
+    margin-left: 3px;
+    font-size: 15px;
+}
+
+.course-quote {
+    align-self: flex-end;
+}
+
+.course-experience-wrapper {
+    width: 100vw;
+    max-width: 100%;
+    margin: 4rem 0px;
+    margin-left: calc(-50vw + 50%);
+    background-color: $move-grey;
+    padding: 2rem $main-margin;
+}
+
+.course-experience-wrapper /deep/ div{
+    max-width: 100%;
+    width: 100%;
+}
+
+.course-pictures {
+    width: 40%;
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .small-images {
+        margin-top: 3%;
+        
+        img {
+            width: 30%;
+            float: left;
+            margin-right: 5%;
+        }
+
+        img:last-child {
+            margin-right: 0%;
+        }
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.flex-container {
+    justify-content: space-between;
+}

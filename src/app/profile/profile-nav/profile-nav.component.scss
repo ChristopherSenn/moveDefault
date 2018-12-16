@@ -1,0 +1,37 @@
+@import '../../../assets/GlobalScss/var.scss';
+
+
+/******************/
+/* GENERAL NAV */
+/******************/
+
+nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+    background-color: $move-light;
+}
+
+#navPlaceholder {
+    width: 100%;
+    position: sticky;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+    font-size: $font-size-medium;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: $font-size-medium;
+    flex: 1;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+a:hover, a.active-link {
+    background-color: $move-lighter;
+}

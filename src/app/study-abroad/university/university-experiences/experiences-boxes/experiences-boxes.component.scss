@@ -1,0 +1,23 @@
+@import '../../../../../assets/GlobalScss/var.scss';
+
+
+.experiences {
+    display: flex;
+    flex-flow: row wrap;   
+}
+
+.experiences > div {
+    background-color: $move-light;
+    width: 20%;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    min-width: 300px;
+    min-height: 150px;
+}
+
+.experience-rating {
+    float: right; 
+    padding-top: 15px; 
+    color: $text-color-bright;
+}

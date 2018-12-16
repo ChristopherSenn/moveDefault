@@ -1,0 +1,27 @@
+footer {
+    z-index: 10000;
+    position: fixed;
+    bottom: 0;
+    background: black;
+    width:100%;
+
+    .breadcrumbs {
+        list-style-type: none;
+        margin-top: 0;
+
+        li {
+            display: block;
+            float: left;
+            margin-right: 2em;
+        }
+
+        .active a{
+            color: #DC6413;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

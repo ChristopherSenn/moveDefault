@@ -1,0 +1,26 @@
+@import '../../assets/GlobalScss/var.scss';
+
+nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+    background-color: $move-blue;  
+    height: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    flex: 1;
+    text-align: center;
+    display: block;
+    padding: 22px 0px;
+}
+
+a:hover, a.active-link {
+    color: $move-orange;
+    font-weight: bold;
+}
+

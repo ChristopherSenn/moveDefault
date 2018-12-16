@@ -1,0 +1,52 @@
+<!-- Login _______________________________________________________ -->
+
+<div class="login" *ngIf="!authService.hasAuthenticatedObject()">
+    <form name="form">
+        <div id="login-wrapper">
+
+            <div class="light-XL blue login-title">Move</div>
+
+            <div>
+                <input placeholder="username" type="text" class="login-input" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+
+                <input placeholder="password" type="password" class="login-input" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+            </div>
+
+            <div>
+                <button id="logInButton" class="button" type="button" (click)="doLogin()">login</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- Home _______________________________________________________ -->
+
+<section id="home-welcome">
+    <div>
+        <h1 class="light-XL orange">Welcome</h1>
+        <h2 class="light-L orange">scroll to explore</h2>
+    </div>
+</section>
+
+<section id="home-first-quote">
+    <div class="home-quote-wrapper">
+        <div class="home-quote-text">
+            „I wanted to go abroad, because I love to see the world with all its natural wonders and cultures. Making experiences is
+            on of the most important things in my live.“
+        </div>
+    </div>
+</section>
+
+<section>
+    <!--Leere section, damit die CSS-Eigenschaft position: sticky funktioniert.-->
+</section>
+
+<section id="home-second-quote">
+    <div class="home-quote-wrapper">
+        <div class="home-quote-text">
+            „Improving my language skills and discovering new angles of the world increases the value of my curriculum vita a lot. Finding
+            a fullfilling job after studying is much easier.“
+        </div>
+    </div>
+</section>

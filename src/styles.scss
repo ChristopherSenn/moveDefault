@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('http://fonts.googleapis.com/css?family=Raleway');
+@import 'assets/GlobalScss/var.scss';
+
+
+
+* {
+    font-family: Raleway;
+    line-height: $line-height;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+
+.placeholder {
+    top: 0px;
+    height: 72px;
+    width: 100%;
+}

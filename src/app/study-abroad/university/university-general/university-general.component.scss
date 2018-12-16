@@ -1,0 +1,32 @@
+@import '../../../../assets/GlobalScss/var.scss';
+
+.university-description {
+    width: 50%;
+    float: left;
+}
+
+.university-pictures {
+    width: 40%;
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .small-images {
+        margin-top: 3%;
+        
+        img {
+            width: 30%;
+            float: left;
+            margin-right: 5%;
+        }
+
+        img:last-child {
+            margin-right: 0%;
+        }
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

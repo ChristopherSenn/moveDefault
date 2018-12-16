@@ -1,0 +1,172 @@
+@import '../../../assets/GlobalScss/var.scss';
+
+
+p, .application-text ul {
+    max-width: 700px;
+}
+
+.scrollbox {
+    height: 250px;
+    width: 700px;
+}
+
+
+/**********************/
+/* PROGRESSBAR */
+/**********************/
+
+.application-progressbar-container {
+    margin-left: 27%;
+    margin-right: 27%;
+    display: inline-block;
+    margin-bottom: 3%;
+}
+
+.application-progressbar {
+    counter-reset: step;
+}
+
+.application-progressbar li{
+    list-style-type: none;
+    line-height: 1.4;
+    width: 15%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: $move-blue;
+    cursor: pointer;
+}
+
+.application-progressbar li span:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    border: 2px solid $move-blue;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.application-progressbar li span:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: $move-blue;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.application-progressbar li:first-child span:after {
+    content: none;
+}
+
+.application-progressbar li.active span {
+    color: $move-light;
+
+    a {
+        color: $move-light;
+    }
+}
+
+.application-progressbar li.active span:before,
+.application-progressbar li.focus span:after {
+    border-color: $move-light;
+}
+
+.application-progressbar li.active span:after,
+.application-progressbar li.focus span:after {
+    background-color: $move-light;
+}
+
+.application-progressbar li.focus span:before {
+    border-color: $move-orange;
+}
+
+
+.application-progressbar li.focus span {
+    color: $move-orange;
+
+    a {
+        color: $move-orange;
+    }
+}
+
+
+/**********************/
+/* CONTENT */
+/**********************/
+
+.application-content {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: space-evenly;
+}
+
+.application-content>div:first-child {
+    width: 100%;
+    text-align: center;
+}
+
+.application-tasks {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.application-text p:first-child {
+    margin-top: 0px;
+}
+
+.application-finished {
+    text-align: center;
+    margin-top: 10%;
+
+    p{
+        width: fit-content;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0px;
+    }
+}
+
+
+/**********************/
+/* TASK LIST */
+/**********************/
+
+label span {
+    display: inline-block;
+}
+
+li input {
+    vertical-align: top;
+    margin-top: 1.5%;
+}
+
+.application-useful-links {
+    padding-left: 30px;
+}
+
+
+/**********************/
+/* NEXT STEP BUTTON */
+/**********************/
+
+.application-finish {
+    width: 100%;
+    text-align: center;
+
+    button {
+        min-width: 300px;
+    }
+}

@@ -1,0 +1,29 @@
+<div *ngIf="university" class="courses">
+  <div *ngFor="let course of university.courses" class="course flex-container">
+
+      <div class="course-text">
+        <div class="bold-M blue">
+          <a routerLink="/studyAbroad/{{university.id}}/course-detail">{{course.title}}</a>
+        </div>
+
+        <div class="regular-S black">
+          {{course.description}}
+        </div>
+      </div>
+
+      <div class="course-ranking blue">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+
+      <div class="course-movers blue">
+        <div class="course-movers-now bold-S">{{course.are}}</div>
+        <img src="../../../../assets/images/icons/personenWarenHier.svg">
+        <div class="course-movers-yet regular-S">{{course.been}}</div>
+      </div>
+
+  </div>
+</div>

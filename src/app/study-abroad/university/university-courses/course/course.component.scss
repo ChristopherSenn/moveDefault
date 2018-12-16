@@ -1,0 +1,48 @@
+.courses {
+    width: 70vw;
+    margin-right: 2%;
+}
+
+.course {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.course>div {
+    margin: 2%;
+}
+
+.course-text {
+    flex-basis: 0;
+    flex-grow: 5;
+}
+
+.course-text a {
+    text-decoration: none;
+}
+
+.course-ranking {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.course-movers {
+    flex-basis: 0;
+    flex-grow: 1;
+    height: 50px;
+    display: flex;
+}
+
+.course-movers img {
+    width: 50px;
+}
+
+.course-movers-now{
+    align-self: flex-end;
+    margin-right: 3px;
+}
+
+.course-movers-yet{
+    align-self: flex-start;
+    margin-left: 3px;
+}
